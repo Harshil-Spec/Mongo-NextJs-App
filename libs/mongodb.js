@@ -8,20 +8,21 @@ const connectMongoDB = async () => {
   //   console.log(error);
   // }
   try {
-    await mongoose.connect('mongodb+srv://himanshuSpec:HjglcaCsj8sjTYiq@cluster0.qfcqdwo.mongodb.net/Tiger');
+    // await mongoose.connect('mongodb+srv://himanshuSpec:HjglcaCsj8sjTYiq@cluster0.qfcqdwo.mongodb.net/Tiger');
+    await mongoose.connect('mongodb+srv://harshiljoshi2102:harshil2102@cluster0.t4pzw.mongodb.net/BOOKS');
     // mongoose.connect(process.env.MONGO_URI);
     const connection = mongoose.connection;
     connection.on('connected', () => {
-        console.log('MongoDB connected successfully..');
+      console.log('MongoDB connected successfully..');
     })
     connection.on('error', (err) => {
-        console.log(`MongoDB connection error: ${err}`);
-        process.exit();
+      console.log(`MongoDB connection error: ${err}`);
+      process.exit();
     })
-} catch (error) {
+  } catch (error) {
     console.log('Something went wrong');
     console.log(error);
-}
+  }
 };
 
 export default connectMongoDB;
