@@ -28,11 +28,11 @@
 
 import mongoose from "mongoose";
 
-// const MONGODB_URL = 'mongodb+srv://darshiladmin:ekfkjqneuzvuuifa@learndemo.tbgruvu.mongodb.net/nextjs'
-const mongodb_url =
-  "mongodb+srv://darshil2015:e96nvb9g8ematamv@cluster0.yi5y6i5.mongodb.net/work";
 
-if (!MONGODB_URL) {
+const mongodb_url =
+  "mongodb+srv://harshiljoshi2102:harshil2102@cluster0.t4pzw.mongodb.net/";
+
+if (!mongodb_url) {
   throw new Error(
     "Please define the MONGODB_URI environment variable inside .env.local"
   );
