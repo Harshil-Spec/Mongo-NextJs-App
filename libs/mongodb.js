@@ -26,11 +26,13 @@
 
 // export default connectMongoDB;
 
+
+// const mongodb_url='mongodb+srv://darshil2015:e96nvb9g8ematamv@cluster0.yi5y6i5.mongodb.net/himanshu'
 import mongoose from "mongoose";
 
 
 const mongodb_url =
-  "mongodb+srv://harshiljoshi2102:harshil2102@cluster0.t4pzw.mongodb.net/";
+  "mongodb+srv://darshil2015:e96nvb9g8ematamv@cluster0.yi5y6i5.mongodb.net/himanshu";
 
 if (!mongodb_url) {
   throw new Error(
