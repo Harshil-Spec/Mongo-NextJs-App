@@ -8,7 +8,7 @@ const connectMongoDB = async () => {
   //   console.log(error);
   // }
   try {
-    await mongoose.connect('mongodb+srv://harshiljoshi2102:harshil2102@cluster0.t4pzw.mongodb.net/');
+    await mongoose.connect('mongodb+srv://himanshuSpec:HjglcaCsj8sjTYiq@cluster0.qfcqdwo.mongodb.net/Tiger');
     // mongoose.connect(process.env.MONGO_URI);
     const connection = mongoose.connection;
     connection.on('connected', () => {
