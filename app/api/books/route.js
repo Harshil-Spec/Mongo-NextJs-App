@@ -11,7 +11,7 @@ export async function POST(request) {
 
 export async function GET() {
   await connectMongoDB();
-  const books = await Book.find().limit(50);;
+  const books = await Book.find().limit(50);
   return NextResponse.json({ books });
 }
 

@@ -46,6 +46,7 @@ if (!cached) {
 
 const connectMongoDB = async () => {
   if (cached.conn) {
+    console.log("✅ Connected to MongoDB");
     return cached.conn;
   }
 
