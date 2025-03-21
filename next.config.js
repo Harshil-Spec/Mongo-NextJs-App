@@ -10,7 +10,7 @@ const nextConfig = {
           {
             source: '/(.*)',
             headers: [
-              { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' }, // or change to 'no-referrer'
+              { key: 'Referrer-Policy',  value: 'no-referrer', }, // or change to 'no-referrer'
             ],
           },
         ];
